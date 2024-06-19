@@ -1,0 +1,30 @@
+225  git remote -v
+  226  git push -u origin main
+  227  ls
+  228  cat > Домашние_животные <<EOF
+собаки
+кошки
+хомяки
+EOF
+
+  229  cat > Вьючные_животные <<EOF
+Лошади
+верблюды
+ослы
+EOF
+
+  230  cat Домашние_животные Вьючные_животные > Объединенные_животные
+  231  cat Объединенные_животные
+  232  mv Объединенные_животные Друзья_человека
+  233  mkdir animals
+  234  mv Друзья_человека animals/
+  235  ls
+  236  wget https://dev.mysql.com/get/mysql-apt-config_0.8.17-1_all.deb
+  237  sudo dpkg -i mysql-apt-config_0.8.17-1_all.deb
+  238  sudo apt-get update
+  239  sudo apt-get install mysql-server
+  240  wget http://ftp.us.debian.org/debian/pool/main/h/htop/htop_2.2.0-1+b1_amd64.deb
+  241  sudo dpkg -i htop_2.2.0-1+b1_amd64.deb
+  242  sudo dpkg -r htop
+  243  history
+
